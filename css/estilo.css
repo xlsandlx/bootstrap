@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    /* background-color: #E9E9D0; */
+    background-color: #CECEB5;
+    font-family: 'Dancing Script', cursive;
+}
+header {
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: header;
+}
+
+h1 {
+    text-align: center;
+    font-size: 420%;
+
+}
+
+nav {
+    max-width: 100%;
+    margin: auto;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+    grid-area: nav;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  
+  }
+
+  .menu > li > a {
+    display: flex;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .menu > li > a:hover {
+    color: green;
+  }
+
+  .menuBar > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  .menuBar > li > a:hover {
+    color: green;
+  }
+  
+  main {
+    grid-area: main;
+    border: 2px black none;
+    width: 100%;
+    height: 100%;
+    font-size: 320%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* align-items: baseline; */
+    /* justify-content: space-around; */
+  }
+
+
+  .carrucel {
+    display: flex;
+    margin-top: 20px;
+    grid-area: carrucel;
+    justify-content: center;
+    text-align: center;
+    
+  }
+ 
+  .populares {
+    border: 2px red none;
+    /* font-size: 320%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    grid-area: populares;
+    margin: 10px;
+  }
+
+  .populares > h3  {
+    text-align: center;
+    color: black;
+    grid-area: subTitulo;
+    margin-bottom: 50px;
+   }
+
+  .caja {
+    font-size: 50%;
+    border: 1px black none;
+    
+}
+.caja img {
+  width: 100%;
+  height: 500px;
+}
+
+  footer {
+    max-width: 100%;
+    background-color: #333;
+    font-size: 20px;
+    margin-top: 50px;
+    grid-area: footer;
+  }
+  .footer {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  
+  .footer > div > a{
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  footer > h3 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+  }
+  .redSocial a:hover{
+    color: green;
+  }
+  .icon{
+    font-size: 40px;
+  }
+
+  @media (max-width: 767px){
+    .caja img {
+      width: 100%;
+      height: 200px;
+    }
+   .menu{
+    display: block;
+   }
+   .carrucel{
+    display: none;
+   } 
+  }
+
+  @media (min-width: 768px){
+    .menuBar {
+      display: none;
+    }
+    .body {
+      display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    justify-content: center;
+  }
+}
+  
+
+@media (min-width: 1024px){
+  .menuBar {
+    display: none;
+  }
+  .body {
+    display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer"
+  ;
+  justify-content: center;
+}
+
+.populares{
+  display: grid;
+  grid-template-areas: 
+  "subTitulo subTitulo"
+  "caja1 caja2"
+  "caja3 caja4"
+  ;
+  column-gap: 5%;
+  row-gap: 2%;
+}
+
+}
