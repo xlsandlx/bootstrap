@@ -42,62 +42,96 @@
         </div>
       </nav>
     </header>
+
     <main class="main">
-      <div data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="carrucel">
-        <!-- futuramente mostrara un carrucel de imagenes con recetas random -->
-        <img src="img/slide_465.jpg" alt="imagen" />
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Limonada-de-cannabis.jpg" class="d-block w-100 imgCarousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Leche-infusionada-de-marihuana.jpg" class="d-block w-100 imgCarousel" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Miel-infusionada-de-marihuana.jpg" class="d-block w-100 imgCarousel" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
 
-      <div class="populares">
+      <div class="row populares">
+
         <h3 class="subTitulo">Recetas Populares</h3>
         <!-- furamente mostrara las recetas mas bisitadas -->
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="caja">
-          <img
-            src="img/Mantequilla-de-marihuana.jpg"
-            alt="manteca de marihuana"
-          />
-          <p>
-            La mantequilla infusionada de marihuana o mantequilla cannabica es
-            una de las formas más simples y comunes de preparar comestibles a
-            partir de cannabis.
-          </p>
-        </div>
 
-        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="caja">
-          <img
-            src="img/Brownie-de-Marihuana-500x500.jpg"
-            alt="brownie de marihuana"
-          />
-          <p>
-            Una clásica y sencilla receta de queque de marihuana (space cake),
-            un postre a base de cannabis popularizado en todo el mundo gracias a
-            los coffeeshops de Ámsterdam, en donde se sirve de las más diversas
-            formas y sabores.
-          </p>
-        </div>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-xl-6 col-md-6 col-xs-12">
+          <div class="card">
+              <img src="img/Mantequilla-de-marihuana.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p>
+                  La mantequilla infusionada de marihuana o mantequilla cannabica es
+                  una de las formas más simples y comunes de preparar comestibles a
+                  partir de cannabis.
+                </p>
+              </div>
+          </div>
+      </div>
 
-        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="caja">
-          <img
-            src="img/Receta-de-Galletas-de-Marihuana.jpg"
-            alt="galletitas de marihuana"
-          />
-          <p>
-            Hoy en día podemos encontrar docenas de recetas y libros al respecto
-            en donde encontrarás todo tipo de preparaciones, desde aperitivos
-            hasta cócteles, pero una que sin duda siempre estará presente será
-            esta tradicional receta de galletas de marihuana para preparar en
-            casa.
-          </p>
+      <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-xl-6 col-md-6 col-xs-12">
+        <div class="card">
+            <img src="img/Brownie-de-Marihuana-500x500.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p>
+                Una clásica y sencilla receta de queque de marihuana (space cake),
+                un postre a base de cannabis popularizado en todo el mundo gracias a
+                los coffeeshops de Ámsterdam, en donde se sirve de las más diversas
+                formas y sabores.
+              </p>
+            </div>
         </div>
+    </div>
 
-        <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="caja">
-          <img src="img/Limonada-de-cannabis.jpg" alt="limonada de cannabis" />
+    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-xl-6 col-md-6 col-xs-12">
+      <div class="card">
+          <img src="img/Receta-de-Galletas-de-Marihuana.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p>
+              Hoy en día podemos encontrar docenas de recetas y libros al respecto
+              en donde encontrarás todo tipo de preparaciones, desde aperitivos
+              hasta cócteles, pero una que sin duda siempre estará presente será
+              esta tradicional receta de galletas de marihuana para preparar en
+              casa.
+            </p>
+          </div>
+      </div>
+  </div>
+
+  <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-xl-6 col-md-6 col-xs-12">
+    <div class="card">
+        <img src="img/Limonada-de-cannabis.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
           <p>
             La limonada con infusión de cannabis es una receta ideal para
             preparar como recompensa de un caluroso día de verano, siendo además
             increíblemente fácil de preparar.
           </p>
         </div>
+    </div>
+</div>
+
       </div>
     </main>
 
