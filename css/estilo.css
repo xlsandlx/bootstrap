@@ -18,17 +18,23 @@ header {
 
 h1 {
     text-align: center;
-    font-size: 520%;
+    font-size: 620%;
+    padding-top: 1.875rem;
 
+}
+
+.nav-con {
+justify-content: space-around;
 }
 
 .navbar {
     background-color: #333;
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 1.5625rem;
+    margin-top: 3.125rem;
+    
   }
+
   .menu > li > a {
-    padding: 15px 20px;
     color: white;
   }
   .menu > li > a:hover {
@@ -36,28 +42,37 @@ h1 {
   }
 
   .populares {
-      padding-top: 10rem;
+      padding-top: 1.25rem;
       margin: auto;
       font-size: 150%;
   }
 
+  .card-body{
+    background-color: #3F7C17;
+    height: 10.625rem;
+  }
+
   .card-img-top {
-    height: 500px;
+    height: 31.25rem;
     object-fit:cover;
+  }
+
+  .card-con{
+    padding-bottom: 1.25rem;
   }
 
   .populares > h3  {
     text-align: center;
     color: black;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     font-size: 320%;
    }
 
    footer {
     max-width: 100%;
     background-color: #333;
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 1.25rem;
+    margin-top: 3.125rem;
     grid-area: footer;
   }
   .footer {
@@ -69,24 +84,28 @@ h1 {
   
   .footer > div > a{
     display: inline-block;
-    padding: 15px 20px;
+    padding: 0.9375rem 1.25rem;
     color: white;
     text-decoration: none;
   }
   footer > h3 {
     text-align: center;
     color: white;
-    font-size: 35px;
+    font-size: 2.1875rem;
   }
   .redSocial a:hover{
     color: green;
   }
   .icon{
-    font-size: 40px;
+    font-size: 2.5rem;
   }
 
   .medidas {
-    font-size: 150%;
+    font-size: 200%;
+    text-align: center;
+  }
+  .medidas > h2 {
+    font-size: 320%;
   }
 
   .subiReceta{
@@ -98,6 +117,6 @@ h1 {
   }
 
   .imgCarousel {
-    height: 500px;
+    height: 31.25rem;
     object-fit: fill;
 }
